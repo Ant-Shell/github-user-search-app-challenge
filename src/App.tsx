@@ -1,5 +1,7 @@
 // import { useState } from "react";
 // import { fetchUser } from './utilities/fetchCalls' // use this onclick of search button for search bar
+import Header from "./components/Header/Header"
+import '/src/styles/_global.scss'
 
 // interface User {
 //   avatar_url: string;
@@ -25,6 +27,7 @@ const App = () => {
 
   return (
     <>
+      <Header/>
     </>
   )
 }

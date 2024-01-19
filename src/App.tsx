@@ -1,4 +1,5 @@
 // import { useState } from "react";
+import Header from "./components/Header/Header"
 // import { fetchUser } from './utilities/fetchCalls' // use this onclick of search button for search bar
 
 // interface User {
@@ -25,6 +26,7 @@ const App = () => {
 
   return (
     <>
+      <Header/>
     </>
   )
 }

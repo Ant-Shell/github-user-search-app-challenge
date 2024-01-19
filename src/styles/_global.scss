@@ -1,11 +1,15 @@
+@use '/src/styles/variables' as *;
+
 body, html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  height: 100%;
+  background-color: $slate_white;
 }
 
 #root {
   max-width: 100vw;
+  max-height: 100vh;
   margin: 0;
-  max-height: auto;
 }

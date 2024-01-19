@@ -1,5 +1,5 @@
 // import { useState } from "react";
-// import { fetchUser } from './utilities/fetchApi' // use this onclick of search button for search bar
+// import { fetchUser } from './utilities/fetchCalls' // use this onclick of search button for search bar
 
 // interface User {
 //   avatar_url: string;

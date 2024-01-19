@@ -1,6 +1,7 @@
 // import { useState } from "react";
 // import { fetchUser } from './utilities/fetchCalls' // use this onclick of search button for search bar
 import Header from "./components/Header/Header"
+import SearchBar from "./components/SearchBar/SearchBar"
 import '/src/styles/_global.scss'
 
 // interface User {
@@ -23,11 +24,10 @@ const App = () => {
   // const [user, setUser] = useState<User>()
   // const [error, setError] = useState<unknown | string>('')
 
-
-
   return (
     <>
       <Header/>
+      <SearchBar/>
     </>
   )
 }

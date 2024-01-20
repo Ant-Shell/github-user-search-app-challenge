@@ -2,5 +2,19 @@
 
 .searchbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 20.438rem;
+  height: 3.75rem;
+  border-radius: 20px;
+  background-color: $white;
+  .searchbar-search-icon {
+    width: 1.253rem;
+    height: 1.25rem;
+  }
+  .searchbar-search {
+    border: hidden;
+    width: 11.5rem;
+    height: 3.75rem;
+  }
 }

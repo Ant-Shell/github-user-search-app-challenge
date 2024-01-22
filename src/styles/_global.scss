@@ -6,6 +6,8 @@ body, html {
   overflow-x: hidden;
   height: 100%;
   background-color: $slate_white;
+  display: flex;
+  justify-content: center;
 }
 
 #root {

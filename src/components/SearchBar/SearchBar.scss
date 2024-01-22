@@ -21,5 +21,16 @@
     .searchbar-search:focus {
       outline: $white;
     }
+    .searchbar-submit-button {
+      border: none;
+      background-color: $clear_blue;
+      color: $white;
+      width: 5.25rem;
+      height: 2.875rem;
+      border-radius: 0.625rem;
+    }
+    .searchbar-submit-button:hover {
+      cursor: pointer;
+    }
   }
 }

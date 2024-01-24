@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, FormEvent } from "react";
 import '/src/components/SearchBar/SearchBar.scss'
 import searchIcon from '/src/assets/icon-search.svg'
 
@@ -10,14 +10,15 @@ interface SearchBarProps {
 const SearchBar = (props: SearchBarProps): JSX.Element => {
   const [searchValue, setSearchValue] = useState<string>('')
 
-  const submitAction = (value:string) => {
+  const submitAction = (e:FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
     const { getUser } = props
-    getUser(value)
+    getUser(searchValue)
   }
 
   return (
     <section className='searchbar'>
-      <form className='searchbar-form'>
+      <form className='searchbar-form' onSubmit={submitAction}>
         <img className='searchbar-search-icon' src={searchIcon}/>
         <input
           type='search'

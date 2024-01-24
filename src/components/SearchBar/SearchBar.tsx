@@ -2,8 +2,18 @@ import { useState } from "react";
 import '/src/components/SearchBar/SearchBar.scss'
 import searchIcon from '/src/assets/icon-search.svg'
 
-const SearchBar = () => {
+
+interface SearchBarProps {
+  getUser: (username:string) => void
+}
+
+const SearchBar = (props: SearchBarProps): JSX.Element => {
   const [searchValue, setSearchValue] = useState<string>('')
+
+  const submitAction = (value:string) => {
+    const { getUser } = props
+    getUser(value)
+  }
 
   return (
     <section className='searchbar'>

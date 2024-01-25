@@ -1,0 +1,36 @@
+@use '/src/styles/variables' as *;
+
+.searchbar {
+  width: 20.438rem;
+  height: 3.75rem;
+  border-radius: 20px;
+  background-color: $white;
+  .searchbar-form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .searchbar-search-icon {
+      width: 1.253rem;
+      height: 1.25rem;
+    }
+    .searchbar-search {
+      border: hidden;
+      width: 11.5rem;
+      height: 3.75rem;
+    }
+    .searchbar-search:focus {
+      outline: $white;
+    }
+    .searchbar-submit-button {
+      border: none;
+      background-color: $clear_blue;
+      color: $white;
+      width: 5.25rem;
+      height: 2.875rem;
+      border-radius: 0.625rem;
+    }
+    .searchbar-submit-button:hover {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,12 +1,13 @@
-const fetchUser = async (user:string, setterFunction:(res: string) => void,
+
+const fetchUser = async (username:string, setterFunction:(res: string) => void,
  errorHandler: (res: string) => void):Promise<void> => {
-  const api = `https://api.github.com/users/${user}`
+  const api = `https://api.github.com/users/${username}`
   try {
     const response = await fetch(api)
     if (!response.ok) {
       errorHandler(response.statusText)
     }
-    const data = await response.json()
+    const data:string = await response.json()
     setterFunction(data)
   } catch(err) {
     if (err instanceof Error) {

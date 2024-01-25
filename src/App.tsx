@@ -6,32 +6,32 @@ import '/src/styles/_global.scss'
 
 interface User {
   avatar_url: string;
-  bio: string;
-  blog: string;
-  company: string;
+  bio: string | null;
+  blog: string | null;
+  company: string | null;
   created_at: string;
-  email: string;
+  email: string | null;
   followers: number;
   following: number;
-  location: string;
+  location: string | null;
   name: string;
   public_repos: number;
-  twitter_username: string;
+  twitter_username: string | null;
 }
 
 const initialState: User = {
-  avatar_url: '',
-  bio: '',
-  blog: '',
-  company: '',
-  created_at: '',
-  email: '',
-  followers: 0,
+  avatar_url: 'https://avatars.githubusercontent.com/u/583231?v=4',
+  bio: 'There once was...',
+  blog: 'https://github.blog',
+  company: '@github',
+  created_at: '2011-01-25T18:44:36Z',
+  email: 'octocat@github.com',
+  followers: 20,
   following: 0,
-  location: '',
-  name: '',
-  public_repos: 0,
-  twitter_username: ''
+  location: 'San Francisco',
+  name: 'monalisa octocat',
+  public_repos: 2,
+  twitter_username: 'monatheoctocat'
 }
 
 const App = () => {

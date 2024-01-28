@@ -1,7 +1,11 @@
 @use '/src/styles/variables' as *;
 
 .user-details {
+  height: 32.313rem;
+  width: 20.438rem;
+  border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: $white;
 }

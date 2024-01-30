@@ -4,8 +4,34 @@
   height: 32.313rem;
   width: 20.438rem;
   border-radius: 20px;
+  margin-top: 15px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
   background-color: $white;
+  .user-details-header {
+    width: 14.563rem;
+    height: 4.375rem;
+    display: flex;
+    padding: 25px;
+    .user-details-image-container {
+      width: 4.375rem;
+      height: 4.375rem;
+      border-radius: 50%;
+      .user-details-image {
+        width: 4.375rem;
+        height: 4.375rem;
+        object-fit: fill;
+        border-radius: 50%;
+      }
+    }
+    .user-details-overview-container {
+      width: 9rem;
+      height: 4.313rem;
+      margin-left: 15px;
+      p {
+        margin: 5px;
+      }
+    }
+  }
 }

@@ -22,9 +22,18 @@ const UserDetails = () => {
         </p>
       </section>
       <section className='user-details-info-section'>
-        <p>Repos</p>
-        <p>Followers</p>
-        <p>Following</p>
+        <div className='user-details-info-container'>
+          <p>Repos</p>
+          <p>8</p>
+        </div>
+        <div className='user-details-info-container'>
+          <p>Followers</p>
+          <p>3938</p>
+        </div>
+        <div className='user-details-info-container'>
+         <p>Following</p>
+         <p>9</p>
+        </div>
       </section>
       <section className='user-details-socials-section'>
         <div>

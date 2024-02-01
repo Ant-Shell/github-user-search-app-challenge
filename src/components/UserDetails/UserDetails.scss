@@ -62,4 +62,34 @@
       margin: 5px;
     }
   }
+  .user-details-socials-section {
+    width: 11.563rem;
+    height: 7.938rem;
+    // margin-left: 15px;
+    padding: 25px;
+    .user-details-socials-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      p {
+        margin: 5px 5px 5px 15px;
+      }
+      .user-details-location-image {
+        width: 13.75px;
+        height: 20px;
+      }
+      .user-details-link-image {
+        width: 20px;
+        height: 20px;
+      }
+      .user-details-twitter-image {
+        width: 20px;
+        height: 16.25px;
+      }
+      .user-details-company-image {
+        width: 20px;
+        height: 19.85px;
+      }
+    }
+  }
 }

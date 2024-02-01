@@ -1,4 +1,8 @@
 import placeholder from  '/src/assets/react.svg'
+import locationIcon from '/src/assets/icon-location.svg'
+import linkIcon from '/src/assets/icon-website.svg'
+import twitterIcon from '/src/assets/icon-twitter.svg'
+import companyIcon from '/src/assets/icon-company.svg'
 import '/src/components/UserDetails/UserDetails.scss'
 
 const UserDetails = () => {
@@ -36,16 +40,20 @@ const UserDetails = () => {
         </div>
       </section>
       <section className='user-details-socials-section'>
-        <div>
+        <div className='user-details-socials-container'>
+          <img className='user-details-location-image' src={locationIcon} alt='Location'/>
           <p>San Francisco</p>
         </div>
-        <div>
+        <div className='user-details-socials-container'>
+          <img className='user-details-link-image' src={linkIcon} alt='Link'/>
           <p>https://github.blog</p>
         </div>
-        <div>
+        <div className='user-details-socials-container'>
+          <img className='user-details-twitter-image' src={twitterIcon} alt='Twitter'/>
           <p>Not Available</p>
         </div>
-        <div>
+        <div className='user-details-socials-container'>
+          <img className='user-details-company-image' src={companyIcon} alt='Company'/>
           <p>@github</p>
         </div>
       </section>

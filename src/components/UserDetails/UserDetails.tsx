@@ -13,7 +13,7 @@ const UserDetails = () => {
           <img className='user-details-image' src={placeholder} alt='User'/>
         </div>
         <div className='user-details-overview-container'>
-          <p>Placeholder text</p>
+          <p>Placeholder</p>
           <p>@placholder</p>
           <p>Joined 01 Jan 2011</p>
         </div>

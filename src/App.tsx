@@ -2,6 +2,7 @@ import { useState } from "react";
 import fetchUser from './utilities/fetchCalls'
 import Header from "./components/Header/Header"
 import SearchBar from "./components/SearchBar/SearchBar"
+import UserDetails from "./components/UserDetails/UserDetails"
 import '/src/styles/_global.scss'
 
 interface User {
@@ -46,6 +47,7 @@ const App = () => {
     <>
       <Header/>
       <SearchBar getUser={getUser}/>
+      <UserDetails/>
     </>
   )
 }

@@ -7,7 +7,7 @@ const Header = () => {
     <header className="header">
       <h1 className="header-logo">devfinder</h1>
       <div className='header-toggle-container'>
-        <h2 className="header-dark-toggle">dark</h2>
+        <h2 className="header-dark-toggle">DARK</h2>
         <img className='header-moon-image' src={Moon} alt='Moon'/>
       </div>
     </header>

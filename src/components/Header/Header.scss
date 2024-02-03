@@ -4,11 +4,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  .header-logo {
+    font-size: 1.625rem;
+  }
   .header-toggle-container {
     display: flex;
     align-items: center;
-
+    .header-dark-toggle {
+      font-size: 0.813rem;
+      letter-spacing: 0.156rem;
+      color: $dusky_blue;
+    }
     .header-moon-image {
       margin-left: 1rem;
     }
